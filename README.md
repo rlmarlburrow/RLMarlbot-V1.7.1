@@ -28,7 +28,7 @@ usage: open the exe file while Rocket League is running, press insert in game to
 ## Installation
 
 ```bash	
-Download the zip. extract the program, enjoy.
+Download the rar. extract the program, enjoy.
 
 Remember to cap fps to 120 for smooth performance.
 
